@@ -1,0 +1,28 @@
+var mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const ArticleSchema = new Schema({
+    title: {
+        type: String,
+        required: true,
+    },
+    
+    date: {
+        type: String,
+        required: true
+    },
+
+    url: {
+        type: String,
+        required: true
+    },
+
+    Note: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Note'
+    }
+});
+
+const Article = mongoose.model('Article', ArticleSchema);
+
+module.exports = Article;
