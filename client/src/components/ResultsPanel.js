@@ -6,9 +6,6 @@ const ResultPanel = () => (
         <div class="card-header text-center bg-secondary text-white">
             Results
         </div>
-
-        <div class="card-body">
-        </div>
     </div>
 
 )
